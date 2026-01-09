@@ -88,8 +88,8 @@ mod tests {
     use super::{
         CommentTag, CommentsRef, FunctionDefinition, MissingParams, Rule, Violation, ViolationError,
     };
-    use crate::parser::Parser;
     use crate::parser::visitor::Visitable;
+    use crate::parser::Parser;
     use solang_parser::parse;
 
     fn parse_source(src: &str) -> Parser {

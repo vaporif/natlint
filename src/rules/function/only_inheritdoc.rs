@@ -43,8 +43,8 @@ impl Rule for OnlyInheritdoc {
 #[cfg(test)]
 mod tests {
     use super::{CommentsRef, FunctionDefinition, OnlyInheritdoc, Rule, Violation, ViolationError};
-    use crate::parser::Parser;
     use crate::parser::visitor::Visitable;
+    use crate::parser::Parser;
     use solang_parser::parse;
 
     fn parse_source(src: &str) -> Parser {

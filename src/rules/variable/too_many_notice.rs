@@ -10,12 +10,12 @@ crate::too_many_comments_rule!(
 #[cfg(test)]
 mod tests {
     use super::{TooManyNotice, VariableDefinition};
+    use crate::parser::visitor::Visitable;
     use crate::{
         generate_too_many_comment_test_cases,
         parser::{CommentTag, CommentsRef, Parser},
         rules::{Rule, Violation, ViolationError},
     };
-    use crate::parser::visitor::Visitable;
     use solang_parser::parse;
 
     fn parse_source(src: &str) -> Parser {

@@ -44,8 +44,8 @@ mod tests {
     use super::{
         CommentTag, CommentsRef, FunctionDefinition, MissingNotice, Rule, Violation, ViolationError,
     };
-    use crate::{generate_missing_comment_test_cases, parser::Parser};
     use crate::parser::visitor::Visitable;
+    use crate::{generate_missing_comment_test_cases, parser::Parser};
     use solang_parser::parse;
 
     fn parse_source(src: &str) -> Parser {

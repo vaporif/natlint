@@ -13,11 +13,11 @@ crate::missing_comment_rule!(
 #[cfg(test)]
 mod tests {
     use super::{ContractDefinition, MissingAuthor};
+    use crate::parser::visitor::Visitable;
     use crate::{
         parser::{CommentTag, CommentsRef, Parser},
         rules::{violation_error::ViolationError, Rule, Violation},
     };
-    use crate::parser::visitor::Visitable;
     use solang_parser::parse;
 
     fn parse_source(src: &str) -> Parser {

@@ -76,8 +76,8 @@ mod tests {
     use super::{
         CommentTag, CommentsRef, ErrorDefinition, MissingParam, Rule, Violation, ViolationError,
     };
-    use crate::parser::Parser;
     use crate::parser::visitor::Visitable;
+    use crate::parser::Parser;
     use solang_parser::parse;
 
     fn parse_source(src: &str) -> Parser {

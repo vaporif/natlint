@@ -10,12 +10,12 @@ crate::no_comment_rule!(
 #[cfg(test)]
 mod tests {
     use super::{NoInheritdoc, StructDefinition};
+    use crate::parser::visitor::Visitable;
     use crate::{
         generate_no_comment_test_cases,
         parser::{CommentTag, CommentsRef, Parser},
         rules::{violation_error::ViolationError, Rule, Violation},
     };
-    use crate::parser::visitor::Visitable;
     use solang_parser::parse;
 
     fn parse_source(src: &str) -> Parser {

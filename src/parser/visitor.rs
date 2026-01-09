@@ -3,8 +3,8 @@
 //! This module provides a simple visitor pattern implementation for solang-parser AST nodes.
 
 use solang_parser::pt::{
-    ContractPart, EnumDefinition, ErrorDefinition, EventDefinition, FunctionDefinition,
-    SourceUnit, SourceUnitPart, StructDefinition, TypeDefinition, VariableDefinition,
+    ContractPart, EnumDefinition, ErrorDefinition, EventDefinition, FunctionDefinition, SourceUnit,
+    SourceUnitPart, StructDefinition, TypeDefinition, VariableDefinition,
 };
 
 /// A trait for visiting Solidity AST nodes.
